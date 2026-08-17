@@ -1,0 +1,185 @@
+{
+  "site": {
+    "title": "Research Artifacts MetaGraph",
+    "subtitle": "Coding Scheme Explorer",
+    "logoText": "RA",
+    "description": "Interactive explorer for research artifacts coded from Business Process Management (BPM) conference papers.",
+    "favicon": "/favicon.svg"
+  },
+
+  "navigation": [
+    { "label": "Papers", "path": "/" },
+    { "label": "Graph", "path": "/relationships" },
+    { "label": "About", "path": "/about" }
+  ],
+
+  "visualization": {
+    "labels": {
+      "stepsTitle": "Types of Artifact",
+      "stepsHint": "Click a type to filter papers",
+      "landscapeTitle": "Research Landscape",
+      "landscapeDescription": "Papers by publication year and track. Hover for details, click to open.",
+      "graphTitle": "Paper Relationship Graph",
+      "graphDescription": "Explore connections between papers based on shared keywords and types of artifact.",
+      "entrySingular": "paper",
+      "entryPlural": "papers"
+    }
+  },
+
+  "typesOfInquiry": [
+    {
+      "id": "formal_science",
+      "label": "Formal Science",
+      "color": "#bf616a",
+      "description": "Formal/mathematical inquiry: proofs, formalisms, and analytical models."
+    },
+    {
+      "id": "information_systems_engineering",
+      "label": "Information Systems Engineering",
+      "color": "#d08770",
+      "description": "Design-science and engineering contributions such as frameworks, tools, and prototypes."
+    },
+    {
+      "id": "scientific_study",
+      "label": "Scientific Study",
+      "color": "#ebcb8b",
+      "description": "Empirical studies that test hypotheses or theories."
+    },
+    {
+      "id": "inductive_study",
+      "label": "Inductive Study",
+      "color": "#a3be8c",
+      "description": "Exploratory, theory-building research grounded in observation."
+    },
+    {
+      "id": "meta_analysis",
+      "label": "Meta-analysis",
+      "color": "#b48ead",
+      "description": "Literature reviews and syntheses of existing research."
+    },
+    {
+      "id": "industrial_application",
+      "label": "Case Study Application",
+      "color": "#88c0d0",
+      "description": "Applied work reporting on real-world industrial deployments."
+    }
+  ],
+
+  "typesOfArtifact": [
+    {
+      "id": "technique",
+      "label": "Technique",
+      "color": "#b67a19",
+      "fill": "#FEC5BB",
+      "description": "A specific procedure applied within a broader method."
+    },
+    {
+      "id": "algorithm",
+      "label": "Algorithm",
+      "color": "#b59c40",
+      "fill": "#FFDFC8",
+      "description": "A defined, step-by-step computational procedure."
+    },
+    {
+      "id": "method",
+      "label": "Method",
+      "color": "#8bb66f",
+      "fill": "#FEFAE0",
+      "description": "A structured, repeatable way of achieving a research or engineering goal."
+    },
+    {
+      "id": "prototype",
+      "label": "Prototype",
+      "color": "#4aa47d",
+      "fill": "#E3E7A0",
+      "description": "An early-stage implementation used to demonstrate feasibility."
+    },
+    {
+      "id": "framework",
+      "label": "Framework",
+      "color": "#5bb3ad",
+      "fill": "#CCD5AE",
+      "description": "A structuring set of concepts, practices, or components."
+    },
+    {
+      "id": "model",
+      "label": "Model",
+      "color": "#8985c3",
+      "fill": "#C9E4DE",
+      "description": "An abstract representation of a system, process, or phenomenon."
+    },
+    {
+      "id": "language",
+      "label": "Language",
+      "color": "#8c57b3",
+      "fill": "#C6DEF1",
+      "description": "A notation, modeling language, or formal language."
+    },
+    {
+      "id": "design_concept",
+      "label": "Design Concept",
+      "color": "#aa6697",
+      "fill": "#BDD2E4",
+      "description": "An idea or principle intended to guide design."
+    },
+    {
+      "id": "report",
+      "label": "Report",
+      "color": "#c3788f",
+      "fill": "#DBCDF0",
+      "description": "A descriptive account of findings, an application, or a case."
+    },
+    {
+      "id": "taxonomy",
+      "label": "Taxonomy",
+      "color": "#cf624e",
+      "fill": "#F2C6DE",
+      "description": "A classification scheme organizing concepts or artifacts."
+    }
+  ],
+
+  "features": {
+    "search": true,
+    "filters": true,
+    "landscape": true,
+    "graph": true,
+    "compare": true,
+    "themeToggle": true,
+    "stats": true
+  },
+
+  "about": {
+    "title": "About This Project",
+    "introduction": "This explorer presents research artifacts coded directly from the research_artifacts.schema.json research-artifact schema, using the same field names and structure defined there. Including every artifact a paper contributes, its research and evaluation methods, empirical evidence, and threats to validity. The underlying data comes from Business Process Management (BPM) conference proceedings.",
+    "sections": [
+      {
+        "title": "Types of Artifact",
+        "content": "Papers are classified by the type(s) of artifact they contribute: Algorithms, prototypes, frameworks, and so on. A paper may contribute more than one type."
+      },
+      {
+        "title": "Data Source",
+        "content": "Data is the result of manually analyzing BPM conference proceedings covering research components, contributed artifacts, research and evaluation methods, empirical evidence, and threats to validity."
+      }
+    ],
+    "license": {
+      "name": "CC BY 4.0",
+      "fullName": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "text": "This dataset and site content are licensed under a Creative Commons Attribution 4.0 International License. You are free to share and adapt the material for any purpose, even commercially, as long as you give appropriate credit, provide a link to the license, and indicate if changes were made.",
+      "reference": {
+        "text": "The Research Artifacts MetaGraph is part of an NFDIxCS Service. For extensions, please submit a pull request or contact the author, Andrea Maldonado.",
+        "serviceLabel": "NFDIxCS Service",
+        "serviceUrl": "https://nfdixcs.org/services",
+        "contactName": "Andrea Maldonado",
+        "contactEmail": "andreamalher.works@gmail.com"
+      },
+      "citation": {
+        "text": "[#] Maldonado, A., & Koschmider, A. (2026). Research Artifacts MetaGraph: A Tool for Comparing and Contextualizing Scientific Contributions in Computer Science. Zenodo. https://doi.org/10.5281/zenodo.21946693",
+        "bibtex": "@InProceedings{maldonado2026metagraph,\nauthor=\"Maldonado, Andrea\nand Koschmider, Agnes\ntitle=\"Research Artifacts MetaGraph: A Tool for Comparing and Contextualizing Scientific Contributions in Computer Science\",\nyear=\"2026\",\npublisher=\"Zenodo\",\ndoi = {10.5281/zenodo.21946693},\nurl = {https://doi.org/10.5281/zenodo.21946693}\n}"
+      },
+      "funding": {
+        "text": "Funded by the German Research Foundation (DFG) within the framework of NFDIxCS (DFG project number 501930651)."
+      }
+    }
+  }
+}

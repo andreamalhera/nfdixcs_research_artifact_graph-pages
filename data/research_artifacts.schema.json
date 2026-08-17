@@ -1,0 +1,308 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Business Process Management Research Artifact",
+  "description": "Schema derived from the BI_Structure_Full taxonomy for classifying research papers and artifacts.",
+  "type": "object",
+  "required": ["metadata", "contribution"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["title", "authors", "doi_or_url", "year", "track"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Source paper title"
+        },
+        "authors": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Paper authors"
+        },
+        "doi_or_url": {
+          "type": "string",
+          "description": "DOI or URL to the paper"
+        },
+        "year": {
+          "type": "integer",
+          "description": "Publication year"
+        },
+        "track": {
+          "type": "string",
+          "description": "Research track on Business Process Management Conference"
+        }
+      }
+    },
+    "contribution": {
+      "type": "object",
+      "required": ["keywords", "focus_intent", "research_components", "artifacts"],
+      "properties": {
+        "keywords": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Author-defined or indexed keywords, highlighted above introduction"
+        },
+        "focus_intent": {
+          "type": "object",
+          "properties": {
+            "goal_paper": {
+              "type": "string",
+              "description": "The main goal or contribution of the paper, as stated by the authors"
+            },
+            "research_question": {
+              "type": "object",
+              "properties": {
+                "question": {
+                  "type": "string",
+                  "pattern": "^[A-Z].*\\?$",
+                  "description": "The primary question the research seeks to answer"
+                },
+                "hidden_in_text": {
+                  "type": "boolean",
+                  "description": "Whether the research question is explicitly stated in the text or inferred by readers"
+                },
+                "highlighted_in_text": {
+                  "type": "boolean",
+                  "description": "Whether the research question is highlighted in the text (e.g., bolded, italicized, or in a separate section)"
+                }
+              }
+            },
+            "motivation_paper": {
+              "type": "string",
+              "description": "The motivation behind the research, as stated by the authors"
+            },
+            "outcome_paper": {
+              "type": "string",
+              "description": "The main findings or outcomes of the research, as stated by the authors"
+            },
+            "type_of_inquiry": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "enum": [
+                  "formal_science",
+                  "information_systems_engineering",
+                  "scientific_study",
+                  "inductive_study",
+                  "meta_analysis",
+                  "industrial_application"
+                ]
+              },
+              "description": "Categories of inquiry the research belongs to"
+            }
+          }
+        },
+        "research_components": {
+          "type": "object",
+          "properties": {
+            "type_of_theory": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "enum": ["formal_theory", "social_science_theory"]
+              },
+              "description": "Type(s) of theory contributed; selecting both indicates a combined contribution"
+            },
+            "emphasis": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "enum": ["theory", "artifact"]
+              },
+              "description": "Emphasis of the research; selecting both indicates dual emphasis"
+            },
+            "formal_concepts": {
+              "type": "boolean",
+              "default": false,
+              "description": "Whether the research contributes formal concepts"
+            },
+            "algorithms": {
+              "type": "boolean",
+              "default": false,
+              "description": "Whether the research contributes algorithms"
+            },
+            "hypothesis": {
+              "type": "boolean",
+              "default": false,
+              "description": "Whether the research contributes hypotheses"
+            },
+            "independent_variables": {
+              "type": "string",
+              "description": "Independent variables studied in the research"
+            },
+            "dependent_variables": {
+              "type": "string",
+              "description": "Dependent variables studied in the research"
+            }
+          }
+        },
+        "artifacts": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "type_of_artifact": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "algorithm",
+                    "tool_implementation",
+                    "prototype",
+                    "method",
+                    "technique",
+                    "language",
+                    "design_concept",
+                    "framework",
+                    "taxonomy",
+                    "model",
+                    "report"
+                  ]
+                },
+                "description": "Type(s) of the artifact contributed"
+              },
+              "research_method": {
+                "type": "object",
+                "properties": {
+                  "methods": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "formal_proof",
+                        "survey",
+                        "lab_experiment",
+                        "field_experiment",
+                        "case_study",
+                        "interviews",
+                        "design_science_engineering",
+                        "simulation",
+                        "systematic_review",
+                        "action_research",
+                        "illustrative_example",
+                        "literature_analysis",
+                        "none"
+                      ]
+                    },
+                    "description": "Research method(s) employed"
+                  },
+                  "other": {
+                    "type": "string",
+                    "description": "Other research methods not covered by the enum"
+                  }
+                }
+              },
+              "evaluation_method": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "verification",
+                    "field_experiment",
+                    "benchmark",
+                    "grounded_theory",
+                    "argumentation",
+                    "controlled_experiment",
+                    "data_science",
+                    "focus_group",
+                    "questionnaire",
+                    "interview",
+                    "motivating_example",
+                    "technical_experiment",
+                    "case_study",
+                    "none"
+                  ]
+                },
+                "description": "Evaluation method(s) used"
+              },
+              "data_collection": {
+                "type": "object",
+                "properties": {
+                  "data_type": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "real_world_data",
+                        "synthetic_data",
+                        "mathematical_formulae",
+                        "undefined"
+                      ]
+                    },
+                    "description": "Type(s) of data used; selecting real_world_data and synthetic_data indicates both"
+                  },
+                  "participants": {
+                    "type": "object",
+                    "properties": {
+                      "total_participants": {
+                        "type": "integer",
+                        "description": "Total number of participants involved in the study, if applicable"
+                      },
+                      "students": {
+                        "type": "integer",
+                        "description": "Number of student participants, if applicable"
+                      },
+                      "practitioners": {
+                        "type": "integer",
+                        "description": "Number of practitioner participants, if applicable"
+                      }
+                    }
+                  },
+                  "material_accessibility": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether the materials used in the study are accessible to the public"
+                  },
+                  "data_accessibility": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether the data used in the study is accessible to the public"
+                  }
+                }
+              },
+              "threats_to_validity": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "internal_validity",
+                    "external_validity",
+                    "construct_validity",
+                    "ecological_validity",
+                    "confirmability",
+                    "reliability"
+                  ]
+                },
+                "description": "Threats to validity discussed in the paper"
+              },
+              "implementation": {
+                "type": "object",
+                "properties": {
+                  "existence": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether the paper includes an implementation of the artifact"
+                  },
+                  "availability": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Whether the implementation of the artifact is available to the public"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,684 @@
+<http://orkg.org/orkg/resource/R1564070> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "NFDIxCS Joint-structure Empirical Research Practice";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C123118>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-0, _:n3-1, _:n3-2, _:n3-3, _:n3-4, _:n3-5, _:n3-6, _:n3-7.
+<http://orkg.org/orkg/class/C123118> <http://www.w3.org/2000/01/rdf-schema#label> "NFDIxCS Joint-structure [C]".
+_:n3-0 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P32>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "A statement about the relevance of a publication (e.g. research gaps).\n\nThe research problem/ the motivation is the starting point in Empirical Research Practice.";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C118009>.
+<http://orkg.org/orkg/predicate/P32> <http://www.w3.org/2000/01/rdf-schema#label> "research problem".
+<http://orkg.org/orkg/class/C118009> <http://www.w3.org/2000/01/rdf-schema#label> "research problem".
+_:n3-1 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P59254>;
+    <http://www.w3.org/ns/shacl#description> "What is the research question reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C27006>;
+    <http://www.w3.org/ns/shacl#order> 1.
+<http://orkg.org/orkg/predicate/P59254> <http://www.w3.org/2000/01/rdf-schema#label> "research question".
+<http://orkg.org/orkg/class/C27006> <http://www.w3.org/2000/01/rdf-schema#label> "research question".
+_:n3-2 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P156076>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#description> "is what the researchers investigate./ is any systematically developed output of a research process that encapsulates knowledge, methods, or implementations.\n\nThe investigation of a research object and the introduction of a new artifact are common parts of Empirical Research Practice.\nExample in SWA: https://gitlab.com/SoftwareArchitectureResearch/StateOfPractice/-/wikis/Data-Extraction/Research-Object";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C126000>;
+    <http://www.w3.org/ns/shacl#order> 2.
+<http://orkg.org/orkg/predicate/P156076> <http://www.w3.org/2000/01/rdf-schema#label> "research objects".
+<http://orkg.org/orkg/class/C126000> <http://www.w3.org/2000/01/rdf-schema#label> "research_object".
+_:n3-3 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P30001>;
+    <http://www.w3.org/ns/shacl#description> "A hypothesis is a precise, testable statement of what the researcher predict will be the outcome. \nThe statement of a hypothesis can be part of Empirical Research Practice.";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C28008>;
+    <http://www.w3.org/ns/shacl#order> 3.
+<http://orkg.org/orkg/predicate/P30001> <http://www.w3.org/2000/01/rdf-schema#label> "hypothesis".
+<http://orkg.org/orkg/class/C28008> <http://www.w3.org/2000/01/rdf-schema#label> "Hypothesis".
+_:n3-4 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P56008>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "The activity of collecting information that can be used to find out about a particular subject.\n\nData collection activities are performed during Empirical Research Practice.";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C27004>;
+    <http://www.w3.org/ns/shacl#order> 4.
+<http://orkg.org/orkg/predicate/P56008> <http://www.w3.org/2000/01/rdf-schema#label> "data collection".
+<http://orkg.org/orkg/class/C27004> <http://www.w3.org/2000/01/rdf-schema#label> "data collection".
+_:n3-5 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P15124>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Data Analysis refers to the process of systematically applying statistical, computational, or logical techniques to describe, summarize, and interpret data.\n\nData analysis activities are performed during Empirical Research Practice.";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C28004>;
+    <http://www.w3.org/ns/shacl#order> 5.
+<http://orkg.org/orkg/predicate/P15124> <http://www.w3.org/2000/01/rdf-schema#label> "data analysis".
+<http://orkg.org/orkg/class/C28004> <http://www.w3.org/2000/01/rdf-schema#label> "data analysis".
+_:n3-6 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P1006>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Result refers to the outcome or findings derived from the Empirical Research Practice.\n\nThe result is the consequence of the Empirical Research Practice. ";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/Result>;
+    <http://www.w3.org/ns/shacl#order> 6.
+<http://orkg.org/orkg/predicate/P1006> <http://www.w3.org/2000/01/rdf-schema#label> "result".
+<http://orkg.org/orkg/class/Result> <http://www.w3.org/2000/01/rdf-schema#label> "Result".
+_:n3-7 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P39099>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What The set of reported types of threats to validity limiting the outcome of a research.threats to validity are reported in a publication? \n\nA threat to validity limits the researchers' findings.\nExample / Definitions in SWA: https://gitlab.com/SoftwareArchitectureResearch/StateOfPractice/-/wikis/Data-Extraction/Validation-Data-Extraction";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C27003>;
+    <http://www.w3.org/ns/shacl#order> 7.
+<http://orkg.org/orkg/predicate/P39099> <http://www.w3.org/2000/01/rdf-schema#label> "threat to validity".
+<http://orkg.org/orkg/class/C27003> <http://www.w3.org/2000/01/rdf-schema#label> "threats to validity".
+<http://orkg.org/orkg/resource/R186763> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Research Question";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C27006>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-8, _:n3-9, _:n3-10, _:n3-11, _:n3-12;
+    <http://orkg.org/orkg/predicate/TemplateLabelFormat> "{P44139}";
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the research question reported in a publication.".
+_:n3-8 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P44139>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What is the research question reported in the publication?";
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/String>.
+<http://orkg.org/orkg/predicate/P44139> <http://www.w3.org/2000/01/rdf-schema#label> "question".
+<http://orkg.org/orkg/class/String> <http://www.w3.org/2000/01/rdf-schema#label> "Text";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2001/XMLSchema#string>.
+_:n3-9 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P55038>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is the research question reported in the publication hidden in the text?";
+    <http://www.w3.org/ns/shacl#order> 1;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P55038> <http://www.w3.org/2000/01/rdf-schema#label> "hidden in text".
+<http://orkg.org/orkg/class/Boolean> <http://www.w3.org/2000/01/rdf-schema#label> "Boolean";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2001/XMLSchema#boolean>.
+_:n3-10 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P55039>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is the research question reported in the publication highlighted in the text?";
+    <http://www.w3.org/ns/shacl#order> 2;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P55039> <http://www.w3.org/2000/01/rdf-schema#label> "highlighted in text".
+_:n3-11 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P41928>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What is the type of the research question?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C29000>;
+    <http://www.w3.org/ns/shacl#order> 3.
+<http://orkg.org/orkg/predicate/P41928> <http://www.w3.org/2000/01/rdf-schema#label> "question type".
+<http://orkg.org/orkg/class/C29000> <http://www.w3.org/2000/01/rdf-schema#label> "question type".
+_:n3-12 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P57000>;
+    <http://www.w3.org/ns/shacl#description> "What is the subquestion of the research question reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C29003>;
+    <http://www.w3.org/ns/shacl#order> 4.
+<http://orkg.org/orkg/predicate/P57000> <http://www.w3.org/2000/01/rdf-schema#label> "subquestion".
+<http://orkg.org/orkg/class/C29003> <http://www.w3.org/2000/01/rdf-schema#label> "subquestion".
+<http://orkg.org/orkg/resource/R1580143> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "research_object";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C126000>;
+    <http://www.w3.org/ns/shacl#closed> false;
+    <http://www.w3.org/ns/shacl#property> _:n3-13, _:n3-14, _:n3-15.
+_:n3-13 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P49030>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/String>.
+<http://orkg.org/orkg/predicate/P49030> <http://www.w3.org/2000/01/rdf-schema#label> "name".
+_:n3-14 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P186001>;
+    <http://www.w3.org/ns/shacl#order> 1.
+<http://orkg.org/orkg/predicate/P186001> <http://www.w3.org/2000/01/rdf-schema#label> "Artifact / Contribution".
+_:n3-15 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P186002>;
+    <http://www.w3.org/ns/shacl#order> 2.
+<http://orkg.org/orkg/predicate/P186002> <http://www.w3.org/2000/01/rdf-schema#label> "Investigated Property".
+<http://orkg.org/orkg/resource/R187805> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Hypothesis";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C28008>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-16, _:n3-17;
+    <http://orkg.org/orkg/predicate/TemplateLabelFormat> "{P56046}";
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the hypothesis reported in a publication.".
+_:n3-16 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P56046>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What hypothesis statement is reported in the publication?";
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/String>.
+<http://orkg.org/orkg/predicate/P56046> <http://www.w3.org/2000/01/rdf-schema#label> "hypothesis statement".
+_:n3-17 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P41703>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What is the type of the hypothesis reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C29033>;
+    <http://www.w3.org/ns/shacl#order> 1.
+<http://orkg.org/orkg/predicate/P41703> <http://www.w3.org/2000/01/rdf-schema#label> "Hypothesis type".
+<http://orkg.org/orkg/class/C29033> <http://www.w3.org/2000/01/rdf-schema#label> "hypothesis type".
+<http://orkg.org/orkg/resource/R186737> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Data Collection";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C27004>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-18, _:n3-19;
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the data collection reported in a publication.".
+_:n3-18 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/DATA>;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What is reported about the collected data in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C29030>.
+<http://orkg.org/orkg/predicate/DATA> <http://www.w3.org/2000/01/rdf-schema#label> "data".
+<http://orkg.org/orkg/class/C29030> <http://www.w3.org/2000/01/rdf-schema#label> "research data".
+_:n3-19 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P1005>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What is the data collection method reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C89001>;
+    <http://www.w3.org/ns/shacl#order> 1.
+<http://orkg.org/orkg/predicate/P1005> <http://www.w3.org/2000/01/rdf-schema#label> "method".
+<http://orkg.org/orkg/class/C89001> <http://www.w3.org/2000/01/rdf-schema#label> "data collection method".
+<http://orkg.org/orkg/resource/R187817> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Data Analysis";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C28004>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-20, _:n3-21, _:n3-22, _:n3-23;
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the data analysis reported in a publication.".
+_:n3-20 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P1005>;
+    <http://www.w3.org/ns/shacl#description> "What is the data analysis method reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/Method>.
+<http://orkg.org/orkg/class/Method> <http://www.w3.org/2000/01/rdf-schema#label> "Method".
+_:n3-21 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P56043>;
+    <http://www.w3.org/ns/shacl#description> "What is reported about inferential statistics used for data analysis in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C28005>;
+    <http://www.w3.org/ns/shacl#order> 1.
+<http://orkg.org/orkg/predicate/P56043> <http://www.w3.org/2000/01/rdf-schema#label> "inferential statistics".
+<http://orkg.org/orkg/class/C28005> <http://www.w3.org/2000/01/rdf-schema#label> "inferential statistics".
+_:n3-22 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P56048>;
+    <http://www.w3.org/ns/shacl#description> "What is reported about descriptive statistics used for data analysis in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C20073>;
+    <http://www.w3.org/ns/shacl#order> 2.
+<http://orkg.org/orkg/predicate/P56048> <http://www.w3.org/2000/01/rdf-schema#label> "descriptive statistics".
+<http://orkg.org/orkg/class/C20073> <http://www.w3.org/2000/01/rdf-schema#label> "descriptive statistic";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.allotrope.org/ontologies/result#AFR_0001212>.
+_:n3-23 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P57016>;
+    <http://www.w3.org/ns/shacl#description> "What is reported about machine learing used for data analysis in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C29012>;
+    <http://www.w3.org/ns/shacl#order> 3.
+<http://orkg.org/orkg/predicate/P57016> <http://www.w3.org/2000/01/rdf-schema#label> "machine learning".
+<http://orkg.org/orkg/class/C29012> <http://www.w3.org/2000/01/rdf-schema#label> "machine learning".
+<http://orkg.org/orkg/resource/R201467> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "performance metrics";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/Result>;
+    <http://www.w3.org/ns/shacl#closed> false;
+    <http://www.w3.org/ns/shacl#property> _:n3-24, _:n3-25, _:n3-26, _:n3-27, _:n3-28, _:n3-29, _:n3-30.
+_:n3-24 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P57098>;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Decimal>.
+<http://orkg.org/orkg/predicate/P57098> <http://www.w3.org/2000/01/rdf-schema#label> "False Negative Rate".
+<http://orkg.org/orkg/class/Decimal> <http://www.w3.org/2000/01/rdf-schema#label> "Decimal";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2001/XMLSchema#decimal>.
+_:n3-25 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P58046>;
+    <http://www.w3.org/ns/shacl#order> 1.
+<http://orkg.org/orkg/predicate/P58046> <http://www.w3.org/2000/01/rdf-schema#label> "False Positive Rate".
+_:n3-26 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P62018>;
+    <http://www.w3.org/ns/shacl#order> 2.
+<http://orkg.org/orkg/predicate/P62018> <http://www.w3.org/2000/01/rdf-schema#label> "True Negative Rate".
+_:n3-27 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P58120>;
+    <http://www.w3.org/ns/shacl#order> 3.
+<http://orkg.org/orkg/predicate/P58120> <http://www.w3.org/2000/01/rdf-schema#label> "True Positive rate".
+_:n3-28 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P62013>;
+    <http://www.w3.org/ns/shacl#order> 4.
+<http://orkg.org/orkg/predicate/P62013> <http://www.w3.org/2000/01/rdf-schema#label> "Precision (%)".
+_:n3-29 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P58112>;
+    <http://www.w3.org/ns/shacl#order> 5.
+<http://orkg.org/orkg/predicate/P58112> <http://www.w3.org/2000/01/rdf-schema#label> "Accuracy (%)".
+_:n3-30 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P62040>;
+    <http://www.w3.org/ns/shacl#order> 6.
+<http://orkg.org/orkg/predicate/P62040> <http://www.w3.org/2000/01/rdf-schema#label> "sensitivity (recall)".
+<http://orkg.org/orkg/resource/R186724> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Threats to Validity";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C27003>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-31, _:n3-32, _:n3-33, _:n3-34, _:n3-35, _:n3-36, _:n3-37, _:n3-38, _:n3-39, _:n3-40, _:n3-41;
+    <http://orkg.org/orkg/predicate/TemplateLabelFormat> "Mentioned, but not classified: {P145000}, Construct validity: {P55037}, Internal validity: {P55035}, External validity: {P55034}, Conclusion validity: {P55036}, Reliability: {P59109}, Generalizability: {P60006}, Repeatability: {P97002}, Content validity: {P68005}, Descriptive validity: {P97000}, Theoretical validity: {P97001}";
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the threats to validity reported in a publication.".
+_:n3-31 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P55037>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Are threats to construct validity reported?";
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P55037> <http://www.w3.org/2000/01/rdf-schema#label> "construct validity".
+_:n3-32 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P55035>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Are threats to internal validity reported?";
+    <http://www.w3.org/ns/shacl#order> 1;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P55035> <http://www.w3.org/2000/01/rdf-schema#label> "internal validity".
+_:n3-33 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P55034>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Are threats to external validity reported?";
+    <http://www.w3.org/ns/shacl#order> 2;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P55034> <http://www.w3.org/2000/01/rdf-schema#label> "external validity".
+_:n3-34 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P55036>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Are threats to conclusion validity reported?";
+    <http://www.w3.org/ns/shacl#order> 3;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P55036> <http://www.w3.org/2000/01/rdf-schema#label> "conclusion validity".
+_:n3-35 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P59109>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Are threats to reliability reported?";
+    <http://www.w3.org/ns/shacl#order> 4;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P59109> <http://www.w3.org/2000/01/rdf-schema#label> "reliability".
+_:n3-36 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P60006>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Are threats to generalizability reported?";
+    <http://www.w3.org/ns/shacl#order> 5;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P60006> <http://www.w3.org/2000/01/rdf-schema#label> "generalizability".
+_:n3-37 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P97002>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Are threats to repeatability reported?";
+    <http://www.w3.org/ns/shacl#order> 6;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P97002> <http://www.w3.org/2000/01/rdf-schema#label> "repeatability".
+_:n3-38 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P68005>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Are threats to content validity reported?";
+    <http://www.w3.org/ns/shacl#order> 7;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P68005> <http://www.w3.org/2000/01/rdf-schema#label> "content validity".
+_:n3-39 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P97000>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Are threats to descriptive validity reported?";
+    <http://www.w3.org/ns/shacl#order> 8;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P97000> <http://www.w3.org/2000/01/rdf-schema#label> "descriptive validity".
+_:n3-40 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P97001>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Are threats to theoretical validity reported?";
+    <http://www.w3.org/ns/shacl#order> 9;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P97001> <http://www.w3.org/2000/01/rdf-schema#label> "theoretical validity".
+_:n3-41 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P145000>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Are threats to validity mentioned but not classified?";
+    <http://www.w3.org/ns/shacl#order> 10;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P145000> <http://www.w3.org/2000/01/rdf-schema#label> "mentioned".
+<http://orkg.org/orkg/resource/R188008> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Subquestion";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C29003>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-42, _:n3-43;
+    <http://orkg.org/orkg/predicate/TemplateLabelFormat> "{P44139}";
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the subquestion of research question reported in a publication.".
+_:n3-42 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P44139>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What is the subquestion of the research question reported in the publication?";
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/String>.
+_:n3-43 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P41928>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What is the type of the sub question?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C29000>;
+    <http://www.w3.org/ns/shacl#order> 1.
+<http://orkg.org/orkg/resource/R188709> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Hypothesis Type";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C29033>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-44, _:n3-45;
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the type of a hypothesis reported in a publication.".
+_:n3-44 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P35106>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is the reported hypothesis the null hypothesis?";
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P35106> <http://www.w3.org/2000/01/rdf-schema#label> "Null hypothesis".
+_:n3-45 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P35107>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is the reported hypothesis the alternative hypothesis?";
+    <http://www.w3.org/ns/shacl#order> 1;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P35107> <http://www.w3.org/2000/01/rdf-schema#label> "Alternative hypothesis".
+<http://orkg.org/orkg/resource/R188614> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Research Data";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C29030>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-46, _:n3-47;
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the collected data reported in a publication.".
+_:n3-46 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P7055>;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What is the type of the collected data reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C29031>.
+<http://orkg.org/orkg/predicate/P7055> <http://www.w3.org/2000/01/rdf-schema#label> "Data type".
+<http://orkg.org/orkg/class/C29031> <http://www.w3.org/2000/01/rdf-schema#label> "data type".
+_:n3-47 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/url>;
+    <http://www.w3.org/ns/shacl#description> "Under which URL(s) can the data be found?";
+    <http://www.w3.org/ns/shacl#order> 1;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/URI>.
+<http://orkg.org/orkg/predicate/url> <http://www.w3.org/2000/01/rdf-schema#label> "url".
+<http://orkg.org/orkg/class/URI> <http://www.w3.org/2000/01/rdf-schema#label> "URI";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2001/XMLSchema#anyURI>.
+<http://orkg.org/orkg/resource/R691422> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Data Collection Method";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C89001>;
+    <http://www.w3.org/ns/shacl#closed> false;
+    <http://www.w3.org/ns/shacl#property> _:n3-48, _:n3-49;
+    <http://orkg.org/orkg/predicate/TemplateLabelFormat> "{P94003}";
+    <http://orkg.org/orkg/predicate/description> "This template is intended to describe the data collection method reported in a publication.".
+_:n3-48 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P94003>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What is the type of method is used for data collection in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C89002>.
+<http://orkg.org/orkg/predicate/P94003> <http://www.w3.org/2000/01/rdf-schema#label> "method type".
+<http://orkg.org/orkg/class/C89002> <http://www.w3.org/2000/01/rdf-schema#label> "method type".
+_:n3-49 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P145012>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What is the exact name of the method for data collection reported in the publication?";
+    <http://www.w3.org/ns/shacl#order> 1;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/String>.
+<http://orkg.org/orkg/predicate/P145012> <http://www.w3.org/2000/01/rdf-schema#label> "method name".
+<http://orkg.org/orkg/resource/R188611> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Data Type";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C29031>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-50, _:n3-51;
+    <http://orkg.org/orkg/predicate/TemplateLabelFormat> "qualitative: {P57038} and quantitative: {P57039}";
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the type of collected data reported in a publication.".
+_:n3-50 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P57038>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is the collected data reported in the publication qualitative?";
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P57038> <http://www.w3.org/2000/01/rdf-schema#label> "qualitative ".
+_:n3-51 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P57039>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is the collected data reported in the publication quantitative?";
+    <http://www.w3.org/ns/shacl#order> 1;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P57039> <http://www.w3.org/2000/01/rdf-schema#label> "quantitative ".
+<http://orkg.org/orkg/resource/R187801> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Inferential Statistics";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C28005>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-52, _:n3-53;
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the inferential statistics reported in a publication.".
+_:n3-52 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P30001>;
+    <http://www.w3.org/ns/shacl#description> "What hypothesis is reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C28008>.
+_:n3-53 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P35133>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What statistical tests is reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C20072>;
+    <http://www.w3.org/ns/shacl#order> 1.
+<http://orkg.org/orkg/predicate/P35133> <http://www.w3.org/2000/01/rdf-schema#label> "Statistical tests".
+<http://orkg.org/orkg/class/C20072> <http://www.w3.org/2000/01/rdf-schema#label> "Statistical Technique".
+<http://orkg.org/orkg/resource/R187815> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Descriptive Statistics";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C20073>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-54, _:n3-55, _:n3-56, _:n3-57;
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the descriptive statistics reported in a publication.".
+_:n3-54 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P56049>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What measures of frequency are reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C28009>.
+<http://orkg.org/orkg/predicate/P56049> <http://www.w3.org/2000/01/rdf-schema#label> "measures of frequency".
+<http://orkg.org/orkg/class/C28009> <http://www.w3.org/2000/01/rdf-schema#label> "measures of frequency".
+_:n3-55 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P57005>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What measures of central tendency are reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C29006>;
+    <http://www.w3.org/ns/shacl#order> 1.
+<http://orkg.org/orkg/predicate/P57005> <http://www.w3.org/2000/01/rdf-schema#label> "measures of central tendency".
+<http://orkg.org/orkg/class/C29006> <http://www.w3.org/2000/01/rdf-schema#label> "measures of central tendency".
+_:n3-56 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P57008>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What measures of dispersion or variation are reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C29007>;
+    <http://www.w3.org/ns/shacl#order> 2.
+<http://orkg.org/orkg/predicate/P57008> <http://www.w3.org/2000/01/rdf-schema#label> "measures of dispersion or variation".
+<http://orkg.org/orkg/class/C29007> <http://www.w3.org/2000/01/rdf-schema#label> "measures of dispersion or variation".
+_:n3-57 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P57010>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What measures of position are reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C29008>;
+    <http://www.w3.org/ns/shacl#order> 3.
+<http://orkg.org/orkg/predicate/P57010> <http://www.w3.org/2000/01/rdf-schema#label> "measures of position".
+<http://orkg.org/orkg/class/C29008> <http://www.w3.org/2000/01/rdf-schema#label> "measures of position".
+<http://orkg.org/orkg/resource/R188038> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Machine Learning";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C29012>;
+    <http://www.w3.org/ns/shacl#closed> false;
+    <http://www.w3.org/ns/shacl#property> _:n3-58, _:n3-59;
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the machine learning reported in a publication.".
+_:n3-58 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/HAS_METRIC>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What metrics are reported for the machine learning reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C14024>.
+<http://orkg.org/orkg/predicate/HAS_METRIC> <http://www.w3.org/2000/01/rdf-schema#label> "metric".
+<http://orkg.org/orkg/class/C14024> <http://www.w3.org/2000/01/rdf-schema#label> "Metric".
+_:n3-59 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P2001>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#description> "What machine learning algorithms are reported in the publication?";
+    <http://www.w3.org/ns/shacl#class> <http://orkg.org/orkg/class/C17008>;
+    <http://www.w3.org/ns/shacl#order> 1.
+<http://orkg.org/orkg/predicate/P2001> <http://www.w3.org/2000/01/rdf-schema#label> "Algorithm".
+<http://orkg.org/orkg/class/C17008> <http://www.w3.org/2000/01/rdf-schema#label> "Machine learning algorithm".
+<http://orkg.org/orkg/resource/R187812> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Measures of Frequency";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C28009>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-60, _:n3-61;
+    <http://orkg.org/orkg/predicate/TemplateLabelFormat> "Count: {P55023} and Percent: {P56050}";
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the measures of frequency reported in a publication.".
+_:n3-60 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P55023>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is count as a measure of frequency reported in the publication?";
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P55023> <http://www.w3.org/2000/01/rdf-schema#label> "count".
+_:n3-61 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P56050>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is percent as a measure of frequency reported in the publication?";
+    <http://www.w3.org/ns/shacl#order> 1;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P56050> <http://www.w3.org/2000/01/rdf-schema#label> "percent".
+<http://orkg.org/orkg/resource/R188027> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Measures of Central Tendency";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C29006>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-62, _:n3-63, _:n3-64, _:n3-65, _:n3-66;
+    <http://orkg.org/orkg/predicate/TemplateLabelFormat> "Mean: {P47000}, Median: {P57006}, Mode: {P57007}, Minimum: {P44107}, and Maximum: {P44108}";
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the measures of central tendency reported in a publication.".
+_:n3-62 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P47000>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is mean as a measure of central tendency reported in the publication?";
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P47000> <http://www.w3.org/2000/01/rdf-schema#label> "mean".
+_:n3-63 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P57006>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is median as a measure of central tendency reported in the publication?";
+    <http://www.w3.org/ns/shacl#order> 1;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P57006> <http://www.w3.org/2000/01/rdf-schema#label> "median".
+_:n3-64 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P57007>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is mode as a measure of central tendency reported in the publication?";
+    <http://www.w3.org/ns/shacl#order> 2;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P57007> <http://www.w3.org/2000/01/rdf-schema#label> "mode".
+_:n3-65 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P44107>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is minimum as a measure of central tendency reported in the publication?";
+    <http://www.w3.org/ns/shacl#order> 3;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P44107> <http://www.w3.org/2000/01/rdf-schema#label> "minimum".
+_:n3-66 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P44108>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is maximum as a measure of central tendency reported in the publication?";
+    <http://www.w3.org/ns/shacl#order> 4;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P44108> <http://www.w3.org/2000/01/rdf-schema#label> "maximum".
+<http://orkg.org/orkg/resource/R188031> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Measures of Dispersion or Variation";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C29007>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-67, _:n3-68, _:n3-69;
+    <http://orkg.org/orkg/predicate/TemplateLabelFormat> "Range: {P4013}, Variance: {P57009}, and Standard deviation: {P44087}";
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the measures of dispersion or variation reported in a publication.".
+_:n3-67 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P4013>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is range as a measure of dispersion or variation reported in the publication?";
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P4013> <http://www.w3.org/2000/01/rdf-schema#label> "range".
+_:n3-68 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P57009>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is variance as a measure of dispersion or variation reported in the publication?";
+    <http://www.w3.org/ns/shacl#order> 1;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P57009> <http://www.w3.org/2000/01/rdf-schema#label> "variance".
+_:n3-69 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P44087>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is standard deviation as a measure of dispersion or variation reported in the publication?";
+    <http://www.w3.org/ns/shacl#order> 2;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P44087> <http://www.w3.org/2000/01/rdf-schema#label> "standard deviation".
+<http://orkg.org/orkg/resource/R188035> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Measures of Position";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C29008>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-70;
+    <http://orkg.org/orkg/predicate/TemplateLabelFormat> "Boxplot: {P59065}";
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe the measures of position reported in a publication.".
+_:n3-70 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P59065>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is boxplot reported in the publication?";
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P59065> <http://www.w3.org/2000/01/rdf-schema#label> "boxplot".
+<http://orkg.org/orkg/resource/R188042> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Metrics";
+    <http://www.w3.org/ns/shacl#targetClass> <http://orkg.org/orkg/class/C14024>;
+    <http://www.w3.org/ns/shacl#closed> true;
+    <http://www.w3.org/ns/shacl#property> _:n3-71, _:n3-72, _:n3-73, _:n3-74;
+    <http://orkg.org/orkg/predicate/TemplateLabelFormat> "Recall: {P5073}, Precision: {P3004}, Accuracy: {P18048}, and F-score: {P59137}";
+    <http://orkg.org/orkg/predicate/description> "The template is intended to describe metrics for machine learning algorithms reported in a publication.".
+_:n3-71 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P5073>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is recall reported in the publication?";
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P5073> <http://www.w3.org/2000/01/rdf-schema#label> "recall".
+_:n3-72 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P3004>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is precision reported in the publication?";
+    <http://www.w3.org/ns/shacl#order> 1;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P3004> <http://www.w3.org/2000/01/rdf-schema#label> "precision".
+_:n3-73 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P18048>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is accuracy reported in the publication?";
+    <http://www.w3.org/ns/shacl#order> 2;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P18048> <http://www.w3.org/2000/01/rdf-schema#label> "accuracy".
+_:n3-74 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <http://orkg.org/orkg/predicate/P59137>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#description> "Is f-score reported in the publication?";
+    <http://www.w3.org/ns/shacl#order> 3;
+    <http://www.w3.org/ns/shacl#datatype> <http://orkg.org/orkg/class/Boolean>.
+<http://orkg.org/orkg/predicate/P59137> <http://www.w3.org/2000/01/rdf-schema#label> "f-score".
