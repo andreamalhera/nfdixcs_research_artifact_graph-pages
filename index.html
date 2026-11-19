@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive visualization of research artifacts coded from BPM conference papers" />
+    <meta name="theme-color" content="#2e3440" />
+    <link rel="icon" type="image/svg+xml" href="/nfdixcs_research_artifact_graph-pages/favicon.svg" />
+    <title>Ariadne Lit</title>
+    <script>
+      try {
+        const stored = localStorage.getItem('ra-explorer-theme');
+        const light = stored === 'light' || (stored !== 'dark' && window.matchMedia('(prefers-color-scheme: light)').matches);
+        if (light) document.documentElement.setAttribute('data-theme', 'light');
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/nfdixcs_research_artifact_graph-pages/assets/index-B4GPS5vu.js"></script>
+    <link rel="modulepreload" crossorigin href="/nfdixcs_research_artifact_graph-pages/assets/rolldown-runtime-CbXtAM7H.js">
+    <link rel="modulepreload" crossorigin href="/nfdixcs_research_artifact_graph-pages/assets/vendor-mUUv3XHL.js">
+    <link rel="stylesheet" crossorigin href="/nfdixcs_research_artifact_graph-pages/assets/index-CXU9Ynns.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

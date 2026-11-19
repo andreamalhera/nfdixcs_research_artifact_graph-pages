@@ -1,0 +1,248 @@
+{
+  "site": {
+    "title": "Ariadne Lit",
+    "subtitle": "A Guide through the Literature Labyrinth",
+    "logoText": "AL",
+    "description": "Interactive explorer for research artifacts coded from Business Process Management (BPM) conference papers.",
+    "favicon": "/favicon.svg"
+  },
+
+  "navigation": [
+    { "label": "Overview", "path": "/" },
+    { "label": "Paper Metagraph", "path": "/relationships" },
+    { "label": "Patterns & Trends", "path": "/analysis" },
+    { "label": "About", "path": "/about" }
+  ],
+
+  "visualization": {
+    "labels": {
+      "stepsTitle": "Types of Artifact",
+      "stepsHint": "Click a type to filter papers",
+      "landscapeTitle": "Publication Timeline",
+      "landscapeDescription": "Papers by publication year and track. Hover for details, click to open.",
+      "graphTitle": "Paper Metagraph",
+      "graphDescription": "Explore connections between papers based on shared keywords and types of artifact.",
+      "entrySingular": "paper",
+      "entryPlural": "papers"
+    }
+  },
+
+  "typesOfInquiry": [
+    {
+      "id": "formal_science",
+      "label": "Formal Science",
+      "color": "#bf616a",
+      "description": "Formal/mathematical inquiry: proofs, formalisms, and analytical models."
+    },
+    {
+      "id": "information_systems_engineering",
+      "label": "Information Systems Engineering",
+      "color": "#d08770",
+      "description": "Design-science and engineering contributions such as frameworks, tools, and prototypes."
+    },
+    {
+      "id": "scientific_study",
+      "label": "Scientific Study",
+      "color": "#ebcb8b",
+      "description": "Empirical studies that test hypotheses or theories."
+    },
+    {
+      "id": "inductive_study",
+      "label": "Inductive Study",
+      "color": "#a3be8c",
+      "description": "Exploratory, theory-building research grounded in observation."
+    },
+    {
+      "id": "meta_analysis",
+      "label": "Meta-analysis",
+      "color": "#b48ead",
+      "description": "Literature reviews and syntheses of existing research."
+    },
+    {
+      "id": "industrial_application",
+      "label": "Case Study Application",
+      "color": "#88c0d0",
+      "description": "Applied work reporting on real-world industrial deployments."
+    }
+  ],
+
+  "typesOfArtifact": [
+    {
+      "id": "technique",
+      "label": "Technique",
+      "color": "#b67a19",
+      "fill": "#FEC5BB",
+      "description": "A specific procedure applied within a broader method."
+    },
+    {
+      "id": "algorithm",
+      "label": "Algorithm",
+      "color": "#b59c40",
+      "fill": "#FFDFC8",
+      "description": "A defined, step-by-step computational procedure."
+    },
+    {
+      "id": "method",
+      "label": "Method",
+      "color": "#8bb66f",
+      "fill": "#FEFAE0",
+      "description": "A structured, repeatable way of achieving a research or engineering goal."
+    },
+    {
+      "id": "software_product",
+      "label": "Software Product",
+      "color": "#4aa47d",
+      "fill": "#E3E7A0",
+      "description": "An implemented tool or system used to demonstrate feasibility."
+    },
+    {
+      "id": "conceptual_framework",
+      "label": "Conceptual Framework",
+      "color": "#5bb3ad",
+      "fill": "#CCD5AE",
+      "description": "A structuring set of concepts, practices, or components."
+    },
+    {
+      "id": "model",
+      "label": "Model",
+      "color": "#8985c3",
+      "fill": "#C9E4DE",
+      "description": "An abstract representation of a system, process, or phenomenon."
+    },
+    {
+      "id": "language",
+      "label": "Language",
+      "color": "#8c57b3",
+      "fill": "#C6DEF1",
+      "description": "A notation, modeling language, or formal language."
+    },
+    {
+      "id": "design_concept",
+      "label": "Design Concept",
+      "color": "#aa6697",
+      "fill": "#BDD2E4",
+      "description": "An idea or principle intended to guide design."
+    },
+    {
+      "id": "experience_report",
+      "label": "Experience Report",
+      "color": "#c3788f",
+      "fill": "#DBCDF0",
+      "description": "A descriptive account of findings, an application, or a case."
+    },
+    {
+      "id": "taxonomy",
+      "label": "Taxonomy",
+      "color": "#cf624e",
+      "fill": "#F2C6DE",
+      "description": "A classification scheme organizing concepts or artifacts."
+    }
+  ],
+
+  "features": {
+    "search": true,
+    "landscape": true,
+    "graph": true,
+    "compare": true,
+    "themeToggle": true,
+    "stats": true
+  },
+
+  "about": {
+    "title": "About This Project",
+    "introduction": "Ariadne Lit shows what Business Process Management (BPM) research contributes and how it is done. Each paper from the BPM conference proceedings was coded by hand: which artifacts it contributes, which research and evaluation methods it uses, what data it relies on, whether an implementation is available, and which threats to validity it discusses. Browse the papers, see how they relate, and analyse patterns and trends across the field.",
+    "schemaFile": "research_artifacts.schema.json",
+    "pages": [
+      {
+        "path": "/",
+        "description": "Browse and search the papers, group them by any coded dimension, and see them on the Publication Timeline."
+      },
+      {
+        "path": "/relationships",
+        "description": "See how papers connect through shared keywords and similar artifacts, clustered by type of artifact."
+      },
+      {
+        "path": "/analysis",
+        "description": "Find which codes occur together and how practices change over time, with statistical tests."
+      }
+    ],
+    "dimensions": [
+      {
+        "key": "type_of_artifact",
+        "description": "What the paper contributes, for example an algorithm, a method or a model. Coded for each paper."
+      },
+      {
+        "key": "research_method",
+        "description": "How the artifact was developed, for example formal modelling or design science research."
+      },
+      {
+        "key": "evaluation_method",
+        "description": "How the artifact was evaluated, for example a benchmark, a case study or an illustrative example."
+      },
+      {
+        "key": "data_type",
+        "description": "The kind of data used: real-world, synthetic, or mathematical formulae."
+      },
+      {
+        "key": "implementation",
+        "description": "Whether an implementation exists and whether it is publicly available."
+      },
+      {
+        "key": "threats_to_validity",
+        "description": "Which threats to validity the paper discusses, such as external or construct validity."
+      },
+      {
+        "key": "type_of_inquiry",
+        "description": "The kind of research the paper does as a whole, for example information systems engineering or a scientific study."
+      },
+      {
+        "key": "type_of_theory",
+        "description": "The kind of theory the paper builds on: formal or social science theory."
+      },
+      {
+        "key": "emphasis",
+        "description": "Whether the paper mainly contributes theory, an artifact, or both."
+      }
+    ],
+    "method": [
+      {
+        "title": "Data Source",
+        "content": "Papers from the BPM conference proceedings, coded manually against the research-artifact coding scheme described above."
+      },
+      {
+        "title": "Coding Process",
+        "content": "Active BPM researchers coded the papers over two years against a fixed coding scheme: two coders coded each paper independently, disagreements were resolved by consensus, and a third coder settled any that remained. This is part of a work soon under review."
+      },
+      {
+        "title": "Anonymization",
+        "content": "Only a public sample of papers is shown with title, authors, keywords and DOI. All other papers are anonymized: their coded data still counts in every chart and statistic, but they are not listed and cannot be opened. Free-text summaries are removed from all papers."
+      },
+      {
+        "title": "Statistics",
+        "content": "The Patterns & Trends page uses Fisher's exact test for pairs of codes that occur together, the Cochran–Armitage test for trends over time, and the Benjamini–Hochberg or Holm correction when many tests are run at once. Each view's \"How to read this\" explains the details."
+      }
+    ],
+    "addingPapers": "To import a collection from a reference manager such as Zotero, export your library as a BibTeX (.bib) file, or create a bibliography in a supported citation style (APA, MLA, IEEE or Springer LNCS) and copy it to the clipboard. Either works as input for \"+ Add Paper\": drop the .bib file or paste the bibliography. Exporting the paper files (PDFs) is not necessary. Title, authors, year, DOI and conference are filled in for you; you then code each paper before it is added.",
+    "contribute": "Missing a paper? Use \"+ Add Paper\" on Overview. Added papers are stored only in your browser; you can propose them for the shared dataset from there.",
+    "license": {
+      "name": "CC BY 4.0",
+      "fullName": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "text": "This dataset and site content are licensed under a Creative Commons Attribution 4.0 International License. You are free to share and adapt the material for any purpose, even commercially, as long as you give appropriate credit, provide a link to the license, and indicate if changes were made.",
+      "reference": {
+        "text": "Ariadne Lit is part of an NFDIxCS Service. For extensions, please submit a pull request or contact the author, Andrea Maldonado.",
+        "serviceLabel": "NFDIxCS Service",
+        "serviceUrl": "https://nfdixcs.org/services",
+        "contactName": "Andrea Maldonado",
+        "contactEmail": "andreamalher.works@gmail.com"
+      },
+      "citation": {
+        "text": "Maldonado, A., & Koschmider, A. (2026). Research Artifacts MetaGraph: A Tool for Comparing and Contextualizing Scientific Contributions in Computer Science. Zenodo. https://doi.org/10.5281/zenodo.21946693",
+        "bibtex": "@software{maldonado2026metagraph,\n  author    = {Maldonado, Andrea and Koschmider, Agnes},\n  title     = {Research Artifacts MetaGraph: A Tool for Comparing and Contextualizing Scientific Contributions in Computer Science},\n  year      = {2026},\n  publisher = {Zenodo},\n  doi       = {10.5281/zenodo.21946693},\n  url       = {https://doi.org/10.5281/zenodo.21946693}\n}"
+      },
+      "funding": {
+        "text": "Funded by the German Research Foundation (DFG) within the framework of NFDIxCS (DFG project number 501930651)."
+      }
+    }
+  }
+}
